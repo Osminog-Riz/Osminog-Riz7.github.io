@@ -1,0 +1,152 @@
+/*для мобильного*/
+body {
+  display: flex;
+  font-size: 120%;
+  flex-direction: column;
+  background: #F6DDCC;
+}
+.logo{
+  float:left;
+  margin:10px; 
+}
+
+.nav{
+  visibility: hidden;
+  display: none;
+}
+.mob{
+  visibility: hidden;
+    display: none;
+}
+header{/*шапка*/
+  flex-shrink: 0;
+  font-family: Luminari, fantasy; /* Семейство шрифтов */
+  text-align: left;
+  background: url(fon.png);
+}
+.all{
+  background: #FEF5E7;
+  align-items: center;
+  text-align: center;
+}
+nav{ /*навигация*/
+  margin-left:0%;
+  display: flex;
+  align-items: center;
+  flex-direction:column; 
+  margin:0 auto;
+  font-family: Luminari, fantasy; /* Семейство шрифтов */
+  text-align: center;
+  background: url(fon.png);
+  margin-bottom: 10px;
+}
+footer{ /*подвал*/
+  background: url(fon.png);
+  text-align: left;
+  flex-shrink: 0;
+}
+
+table{
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse; /*убираем двойные линии вокруг ячеек*/
+
+}
+td, th{
+  text-align: center;
+  border: 1px solid black;
+}
+tr:nth-child(2n){
+  background: #EFB63C ;
+}
+.forma{/*форма выше таблицы*/
+  margin:10px; 
+  width: 100%;
+  position: relative;
+}
+
+h1{
+  margin:20px; 
+}
+.a1{
+  width: 50%;
+}
+.a2{
+  width: 25%;
+}
+#slides{
+  margin:0.8;
+  text-align:center;
+  max-width:920px;
+  max-height:920px;
+  margin: 0 auto;
+  margin-top:15px;
+  padding:0px;
+  word-spacing: 0px;
+  background: rgba(255, 255, 255, 1);
+}
+img.slide{
+  width: 230px;
+  height: 230px;
+  }
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slide img {
+    width: 90%;
+    margin: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #212529;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+/*для компа*/
+@media (min-width:  990px){
+#slides{
+  max-width: 260px;
+  max-height:260px;
+}
+img.slide{
+  width: 130px; 
+  height: 130px;
+}
+.logo{
+  float:left;
+  margin:10px; 
+}
+textarea{
+width: 30%;
+}
+.nav{
+  display: initial;
+   visibility: visible;
+  align-items: center;
+   flex-direction:row; 
+   margin-bottom: 20px; 
+}
+.mob{
+  visibility: visible;
+  display: initial;
+}
+.forma{
+  position: relative;
+  margin-bottom: 20px;
+}
+}
